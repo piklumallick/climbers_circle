@@ -12,7 +12,7 @@ body, html {
     border-bottom: 10px solid;
     border-image-source: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
     border-image-slice: 1;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     margin: 0 auto; /* Center horizontally */
 }
 
@@ -129,7 +129,7 @@ body, html {
     max-width: 100%; /* Ensure the video does not exceed the viewport width */
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    padding-top: 110px; /* Adjust to the height of the .hero + .image-container */
+    padding-top: 210px; /* Adjust to the height of the .hero + .image-container */
 }
 
 /* Footer */
