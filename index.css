@@ -238,6 +238,17 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.contact-info iframe {
+    width: 80vw;
+    height: auto;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(21, 24, 1, 0.2);
+}
   
 
 /* Add styles for the new About Us and Upcoming Events sections */
