@@ -23,7 +23,7 @@ body, html {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1.5vw;
-    text-align: justify;
+    text-align: center;
 }
 
 .course img {
@@ -57,11 +57,40 @@ body, html {
     position: relative;
     width: 999px;
     height: 100%; /* Set height to 100% */
-    border-bottom: 14px solid;
-    border-image-source: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
-    border-image-slice: 1;
     margin-bottom: 0px;
     margin: 0 auto; /* Center horizontally */
+}
+   
+.solid-line {
+    width: 100%;
+    height: 14px;
+    background-image: linear-gradient(to left, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
+    animation: move-right 4s infinite;
+    margin-top: 0.5px;
+}
+
+@keyframes move-right {
+    0% {
+    background-image: linear-gradient(to left, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
+   }
+    16.67% {
+    background-image: linear-gradient(to left, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ff0000);
+   }
+    33.33% {
+    background-image: linear-gradient(to left, #ffff00, #008000, #0000ff, #4b0082, #ff0000, #ffa500);
+   }
+    50% {
+    background-image: linear-gradient(to left, #008000, #0000ff, #4b0082, #ff0000, #ffa500, #ffff00);
+   }
+    66.67% {
+    background-image: linear-gradient(to left, #0000ff, #4b0082, #ff0000, #ffa500, #ffff00, #008000);
+   }
+    83.33% {
+    background-image: linear-gradient(to left, #4b0082, #ff0000, #ffa500, #ffff00, #008000, #0000ff);
+   }
+    100% {
+    background-image: linear-gradient(to left, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
+   }
 }
   
 .image-container img {
@@ -126,6 +155,8 @@ body, html {
     justify-content: space-around;
     height: 24px;
     width: 30px;
+    background-color: #16c736; /* initial background color */
+    transition: background-color 0.5s ease-in-out; /* transition effect */
 }
 
 .hamburger-menu span {
@@ -309,7 +340,9 @@ footer {
 .fb-video {
     width: 50vw;
     height: auto;
-    position: relative;
-    left: 50%;
-    transform: translate(-23vw);
+    object-fit: cover;
+    display: inline-block;
+    margin: 2em auto;
 }
+   
+   

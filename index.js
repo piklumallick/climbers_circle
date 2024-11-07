@@ -19,4 +19,13 @@ document.addEventListener("click", function(event) {
     }
 });
 
-   
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+let colors = ["#FF5733","#3498DB","#9B59B6","#1ABC9C","#E74C3C","#F1C40F","#2ECC71","#E67E22"]; /* array of colors */
+let currentColorIndex = 0;
+
+setInterval(() => {
+ hamburgerMenu.style.backgroundColor = colors[currentColorIndex];
+ currentColorIndex = (currentColorIndex + 1) % colors.length;
+}, 5000); /* change color every 5 seconds */
+
