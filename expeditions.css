@@ -299,7 +299,7 @@ footer {
     background: #333;
     color: #fff;
     padding: 1em;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
 
 /* Add a new style to make the content start from the top */
@@ -369,8 +369,8 @@ footer {
    
 
 .social-media-logo {
-    width: 5vw;
-    height: auto;
+    width: 60px;
+    height: 60px;
     margin: 10px;
 }
    
