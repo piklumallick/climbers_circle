@@ -8,10 +8,13 @@
 
 .expedition {
     background-color: #f9f9f9;
+    margin: 20px 0;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.5vw;
+    text-align: justify;
 }
 
 .expedition img {
@@ -296,6 +299,7 @@ footer {
     background: #333;
     color: #fff;
     padding: 1em;
+    font-size: 1.8vw;
 }
 
 /* Add a new style to make the content start from the top */
@@ -365,8 +369,8 @@ footer {
    
 
 .social-media-logo {
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: auto;
     margin: 10px;
 }
    

@@ -212,6 +212,7 @@ footer {
     background: #333;
     color: #fff;
     padding: 1em;
+    font-size: 1.8vw;
 }
 
 /* Add a new style to make the content start from the top */
@@ -255,7 +256,7 @@ footer {
 .about-us{
     box-sizing: border-box; /* Include padding and border in width */
     width: 90%; /* Full width */
-    margin: 40px auto; /* Small margin on left and right */
+    margin: 20px auto; /* Small margin on left and right */
     padding: 20px; /* Inner padding */
     background-color: #f9f9f9;
     font-size: 2.0vw;
@@ -305,6 +306,7 @@ footer {
 
 .about-us p, .upcoming-events p {
     color: #666;
+    font-size: 2.0vw;
 }
 
 .upcoming-events ul {
@@ -337,8 +339,8 @@ footer {
    
 
 .social-media-logo {
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: auto;
     margin: 10px;
 }
    

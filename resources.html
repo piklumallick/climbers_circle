@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Climbing Guide</title>
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="image-container">
+        <img src="resources/gaja.jpg" alt="Climbers' Circle Image" width="999" height="156">
+        <div class="overlay-text">CLIMBERS' CIRCLE</div>
+    </div>
+    <div class="solid-line"></div>
+        <div class="logo-container">
+            <img src="resources/cc_logo.jpg" alt="Climbers' Circle Logo" class="logo">
+        </div>
+    <div class="menu-container">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <nav id="menu" class="menu">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Upcoming Events</a>
+                <div class="dropdown-menu">
+                  <a href="courses.html">Annual Courses</a>
+                  <a href="news.html">News</a>
+                </div>
+            </div>
+            <a href="gallery.html">Gallery</a>
+            <a href="expeditions.html">Expeditions</a>
+            <a href="treks.html">Treks</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="members-forum.html">Members' Forum</a>
+            <a href="executive-committee.html">Executive Committee</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </div>
+  </header>
+    <div class="container">
+        <h1>Rock Climbing Guide</h1>
+        
+        <!-- Types of Rock Climbing -->
+        <div class="accordion">
+          <h2>Types of Rock Climbing <i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="types-of-climbing">
+                    <ul>
+                        <li><strong>Sport Climbing</strong>: Involves climbing routes with fixed anchors (bolts). Typically performed on natural rock or artificial walls. </li>
+                        <li><strong>Traditional (Trad) Climbing</strong>: Climbers place their own protective gear (e.g., cams and nuts) into the rock as they ascend. </li>
+                        <li><strong>Free Climbing</strong>: Primarily uses hands and feet, with gear only for protection. </li>
+                        <li><strong>Aid Climbing</strong>: Uses equipment to assist in climbing, relying more on gear than physical ability. </li>
+                        <li><strong>Alpine Climbing</strong>: High-altitude style combining rock and ice climbing, often in remote mountains. </li>
+                        <li><strong>Ice Climbing</strong>: Climbing on ice formations using specialized equipment like crampons and ice axes. </li>
+                        <li><strong>Bouldering</strong>: Short, lower-level climbs without ropes or harnesses, typically up to 20 feet. </li>
+                        <li><strong>Top-Rope Climbing</strong>: Climbing with a rope already fixed at the top of the climb. </li>
+                        <li><strong>Lead Climbing</strong>: Climber attaches to the rope and clips into place as they ascend. </li>
+                        <li><strong>Solo Climbing</strong>: Climbing alone, without any protection or partner. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grades -->
+        <div class="accordion">
+            <h2>Grades<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="grades">
+                    <ul>
+                        <li><strong>YDS (Yosemite Decimal System)</strong>: U.S.-based system rating climbs from Class 1 (hiking) to Class 5 (technical climbing), with subdivisions like 5.10, 5.11, etc. </li>
+                        <li><strong>V Scale</strong>: Specifically for bouldering, grades V0 to V17 where V0 is easiest and V17 is hardest. </li>
+                        <li><strong>Ewbank Grade</strong>: Used in Australia and New Zealand, rates climbs from 1 to 35. </li>
+                        <li><strong>UIAA Grade</strong>: Used in Europe, rates climbs from I (easy) to XII (extremely difficult). </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bouldering -->
+        <div class="accordion">
+            <h2>Bouldering<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="bouldering">
+                    <p>Bouldering involves climbing short but challenging routes (problems) without ropes, typically up to 20 feet. </p>
+                    <p>Safety:</p>
+                    <ul>
+                        <li>Uses crash pads to cushion falls and spotters to guide falls. </li>
+                        <li>Graded using the V Scale. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Equipment -->
+        <div class="accordion">
+            <h2>Equipment<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="equipment">                    
+                    <!-- Ropes -->
+                    <div class="ropes">
+                        <h3>Ropes</h3>
+                        <ul>
+                            <li><strong>Dynamic Ropes</strong>: Stretch under load, reducing force on climber in a fall (used for sport and trad climbing). </li>
+                            <li><strong>Static Ropes</strong>: Little to no stretch, used for rappelling, hauling, or rescue. </li>
+                            <li><strong>Single Ropes</strong>: Used for most climbing applications. </li>
+                            <li><strong>Half Ropes</strong>: Used for rappelling or as a backup rope. </li>
+                            <li><strong>Twin Ropes</strong>: Used for long rappels or high-safety situations. </li>
+                        </ul>
+                    </div>
+
+                    <!-- Belay Devices -->
+                    <div class="belay-devices">
+                        <h3>Belay Devices</h3>
+                        <ul>
+                            <li><strong>Belayer</strong>: Person managing the rope for the climber. </li>
+                            <li><strong>Belay Devices</strong>: Tools like ATC, GriGri, and others to control belay process. </li>
+                            <li><strong>Manual Belay Devices</strong>: Requires belayer's manual rope control. </li>
+                            <li><strong>Assisted Belay Devices</strong>: Mechanism assists belayer in rope control. </li>
+                        </ul>
+                    </div>
+
+                    <!-- Safety Devices -->
+                    <div class="safety-devices">
+                        <h3>Safety Devices</h3>
+                        <ul>
+                            <li><strong>Harness</strong>: Worn by climbers, connects to belay and anchors. </li>
+                            <li><strong>Carabiners</strong>: Metal loops with spring-loaded gates for connecting equipment. </li>
+                            <li><strong>Quickdraws</strong>: Connects rope to fixed anchors in sport climbing. </li>
+                            <li><strong>Cams</strong>: Spring-loaded devices in trad climbing. </li>
+                            <li><strong>Nuts</strong>: Metal wedges in trad climbing. </li>
+                            <li><strong>Hexes</strong>: Hexagonal-shaped protection for trad climbing. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Sections -->
+        <div class="accordion">
+            <h2>Anchors<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="anchors">
+                    <ul>
+                        <li><strong>Natural Anchors</strong>: Existing rock features (trees, boulders). </li>
+                        <li><strong>Fixed Anchors</strong>: Bolts and hardware permanently placed in rock. </li>
+                        <li><strong>Top Rope Anchors</strong>: Setup for top roping, anchored at route top. </li>
+                        <li><strong>Rappel Anchors</strong>: Setup for rappelling, anchored at route top. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>Knots<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="knots">
+                    <ul>
+                        <li><strong>Figure Eight Knot</strong>: Used for tying into harness. </li>
+                        <li><strong>Bowline Knot</strong>: Creates a fixed loop, often in rescue. </li>
+                        <li><strong>Clove Hitch</strong>: Quick, adjustable knot for anchors. </li>
+                        <li><strong>Double Fisherman’s Knot</strong>: Ties two ropes, especially for rappelling. </li>
+                        <li><strong>Prusik Knot</strong>: For temporary anchor or ascending. </li>
+                        <li><strong>Water Knot</strong>: Joins two rope ends. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>Climbing Techniques<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="climbing-techniques">
+                    <ul>
+                        <li><strong>Footwork</strong>: Proper foot placement and movement. </li>
+                        <li><strong>Body Positioning</strong>: Balanced, efficient position on rock. </li>
+                        <li><strong>Hand Placement</strong>: Proper hand placement and grip. </li>
+                        <li><strong>Route Reading</strong>: Analyzing rock for best route. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>Climbing Commands<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="climbing-commands">
+                    <ul>
+                        <li><strong>Climb On</strong>: Signals climber ready to start. </li>
+                        <li><strong>Take</strong>: Belayer should take in slack. </li>
+                        <li><strong>Give</strong>: Belayer should give out slack. </li>
+                        <li><strong>Ready to Lower</strong>: Climber is ready to be lowered. </li>
+                        <li><strong>Lower</strong>: Belayer should lower climber. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>Climbing Etiquette<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="climbing-etiquette">
+                    <ul>
+                        <li><strong>Respect the Rock</strong>: Avoid damage to rock and environment. </li>
+                        <li><strong>Respect Other Climbers</strong>: Be mindful, avoid interference. </li>
+                        <li><strong>Clean Up</strong>: Remove trash and gear. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2>Additional Considerations<i class="fas fa-chevron-down"></i></h2>
+            <div class="panel" style="display: none;">
+                <div class="additional-considerations">
+                    <ul>
+                        <li><strong>Climbing Gear</strong>: Includes shoes, chalk bags, helmets.</li>
+                        <li><strong>Weather Conditions</strong>: Stay aware and adjust plans accordingly.</li>
+                        <li><strong>Physical Conditioning</strong>: Climbing is physically demanding.</li>
+                        <li><strong>Mental Preparation</strong>: Climbing is mentally challenging.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Climbers' Circle. All rights reserved.</p>
+      <p>Follow us:</p>
+      <div class="social-media-links">
+      <a href="https://www.facebook.com/groups/1795660763979082/" target="_blank">
+      <img src="resources/fb_logo.jpg" alt="Facebook Logo" class="social-media-logo">
+      </a>
+      <a href="http://www.instagram.com/climbers_circle" target="_blank">
+      <img src="resources/insta_logo.jpg" alt="Instagram Logo" class="social-media-logo">
+      </a>
+      </div>
+    </footer>
+
+    <script src="resources.js"></script>
+</body>
+</html>

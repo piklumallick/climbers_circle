@@ -1,0 +1,375 @@
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+.container {
+  position: relative;
+  margin-top: 156px;
+  max-width: 90vw;
+  margin: 200px auto;
+  padding: 10px;
+  justify-content: justify;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+h1, h2 {
+ color: #333;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+li {
+ margin-bottom: 10px;
+}
+
+a {
+ text-decoration: none;
+ color: #337ab7;
+}
+
+a:hover {
+ color: #23527c;
+}
+
+.accordion {
+ margin-bottom: 20px;
+}
+
+.accordion h2 {
+ background-color: #337ab7;
+ color: #fff;
+ padding: 10px;
+ border: none;
+ border-radius: 5px 5px 0 0;
+ cursor: pointer;
+}
+
+.accordion h2 i {
+  margin-left: 10px;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+ 
+.accordion h2 i.fa-chevron-down {
+  transform: rotate(0deg);
+}
+ 
+.accordion h2 i.fa-chevron-up {
+  transform: rotate(180deg);
+}
+
+.accordion .panel {
+ background-color: #f9f9f9;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-top: none;
+ margin-left: 20px;
+ display: none;
+}
+
+.accordion .panel ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+.accordion .panel li {
+ margin-bottom: 10px;
+ margin-left: 20px;
+}
+
+
+/* header */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 999px;
+  height: 100%; /* Set height to 100% */
+  margin-bottom: 0px;
+  margin: 0 auto; /* Center horizontally */
+}
+ 
+.solid-line {
+  width: 100%;
+  height: 14px;
+  background-image: linear-gradient(to left, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
+  animation: move-right 4s infinite;
+  margin-top: 0.5px;
+}
+
+@keyframes move-right {
+  0% {
+  background-image: linear-gradient(to left, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
+ }
+  16.67% {
+  background-image: linear-gradient(to left, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ff0000);
+ }
+  33.33% {
+  background-image: linear-gradient(to left, #ffff00, #008000, #0000ff, #4b0082, #ff0000, #ffa500);
+ }
+  50% {
+  background-image: linear-gradient(to left, #008000, #0000ff, #4b0082, #ff0000, #ffa500, #ffff00);
+ }
+  66.67% {
+  background-image: linear-gradient(to left, #0000ff, #4b0082, #ff0000, #ffa500, #ffff00, #008000);
+ }
+  83.33% {
+  background-image: linear-gradient(to left, #4b0082, #ff0000, #ffa500, #ffff00, #008000, #0000ff);
+ }
+  100% {
+  background-image: linear-gradient(to left, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
+ }
+}
+
+.image-container img {
+  width: 100%; /* Fill container width */
+  height: 100%; /* Fill container height */
+  object-fit: contain; /* Add this property */
+}
+
+.overlay-text {
+position: absolute; /* Overlay text */
+top: 50%; /* Vertical centering */
+left: 50%; /* Horizontal centering */
+transform: translate(-50%, -50%); /* Fine-tune centering */
+color: white;
+font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
+text-shadow: 50px 50px 50px rgba(186, 11, 29, 0.2); /* Add shadow effect */
+font-size: 5vw; /* Adjust font size to your liking */
+font-weight: bold;
+text-align: center;
+}
+
+
+/* Hero Section */
+.hero {
+  position: fixed; /* Change from relative to fixed */
+  top: 0; /* Stick to the top of the viewport */
+  left: 0; /* Stick to the left of the viewport */
+  width: 100%; /* Take up the full width */
+  z-index: 10; /* Ensure it's on top of other elements */
+  background-color: transparent; /* Optional: set background color if needed */
+}
+
+.overlay {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 05px; /* Leave 05px space from the left edge */
+  transform: translateY(-50%);
+}
+ 
+.logo {
+  width: 14vw; /* Set the logo width to 182px */
+  height: auto; /* Set the logo height to 182px */
+}
+ 
+ 
+
+.hamburger-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  background-color: #16c736; /* initial background color */
+  transition: background-color 0.5s ease-in-out; /* transition effect */
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 2px 0;
+}
+
+.menu {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 20px; /* Adjusted to match hamburger menu position */
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px; /* Added padding */
+  border-radius: 5px; /* Optional: adds a slight curve to the corners */
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu.menu-open {
+display: flex;
+}
+
+.menu a {
+color: white;
+text-decoration: none;
+font-size: 1.2em;
+padding: 10px;
+margin: 10px 0; /* Added margin between items */
+}
+.menu a:hover {
+  background-color: #f9f9f9;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* Add a new style for the menu when it's open and hovered */
+.menu-open:hover, .menu-container:hover .menu-open {
+  display: flex; /* Keep the menu open when hovered */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f9f9f9;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* Video Section */
+.video-section {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.video-section video {
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  max-width: 100%; /* Ensure the video does not exceed the viewport width */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  padding-top: 210px; /* Adjust to the height of the .hero + .image-container */
+}
+
+/* Footer */
+footer {
+  height: 180px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1em;
+  font-size: 1.8vw;
+}
+
+/* Add a new style to make the content start from the top */
+.hero, .video-section {
+  margin-top: 0; /* Ensure no top margin */
+  padding-top: 0; /* Ensure no top padding */
+}
+
+/* Optional: to make the content full-width */
+.hero, .image-container, .video-section {
+max-width: 100%; /* Optional: set max-width to 100% */
+width: 100%; /* Optional: set width to 100% */
+}
+
+
+
+
+/* Add styles for the new About Us and Upcoming Events sections */
+.about-us, .upcoming-events {
+  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%; /* Full width */
+  margin: 40px auto; /* Small margin on left and right */
+  padding: 20px; /* Inner padding */
+  background-color: #f9f9f9;
+  font-size: 2.0vw;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2, .upcoming-events h2 {
+  color: #333;
+  margin-top: 0;
+  font-size: 3.5vw;
+}
+
+.about-us p, .upcoming-events p {
+  color: #666;
+}
+
+.upcoming-events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upcoming-events li {
+  margin-bottom: 20px;
+}
+
+.upcoming-events li h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+.upcoming-events li p {
+  color: #666;
+}
+
+.social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-top: 5px;
+}   
+ 
+
+.social-media-logo {
+  width: 5vw;
+  height: auto;
+  margin: 10px;
+}
+ 
+.social-media-logo:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
